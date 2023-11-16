@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="This is a recipie website for pizzas">
+	<title>Assia.A</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<nav class="menu">
+	<ol>
+		<li>Home</li>
+		<li>About</li>
+		<li>Project</li>
+		<li>Contact me</li>
+		<li>Something</li>
+	</ol>
+</nav>
+	<p>i am <i>refreshed </i>and <strong>strong</strong></p>
+	<i class="fa-regular fa-moon" id="iconename" onclick="darklightfnc()"></i>
+
+	<script>
+		var isDark = false;
+		var classicon = document.getElementById('iconename');
+		function darklightfnc(){
+			if(isDark == false){
+				document.body.style.backgroundColor = "black";
+				document.body.style.color="white";
+				isDark = true;
+				classicon.classList.replace("fa-moon","fa-sun")
+			}else{
+				document.body.style.backgroundColor = "white";
+				document.body.style.color="black";
+				isDark =false;
+				classicon.classList.replace("fa-sun","fa-moon")
+			}
+			
+		}
+	</script>
+</body>
+</html>
