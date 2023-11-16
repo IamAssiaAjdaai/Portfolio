@@ -1,4 +1,57 @@
-#text{
-    background-color: black;
-    color: white;
-    }
+:root[data-applied-mode="light"]{
+ color-scheme: light;
+ --text:black;
+ --background: white;
+}
+
+:root[data-applied-mode="dark"]{
+    color-scheme: dark;
+    --text:white;
+    --background: black;
+   }
+
+body{
+    color: var(--text);
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+    font-family:'Inconsolata',sans-serif;
+    text-align: center;
+}
+
+.row>*{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 0 !important;
+}
+.menu{
+    margin-top: 15px;
+}
+ol{
+    list-style: none;
+    font-weight: 400;
+    width: 100%;
+}
+
+li{
+display: inline;
+margin: 8px;
+}
+
+li:hover{
+    font-weight: 700;
+}
+
+#iconSun{
+    color:gray;
+    margin-left: 8rem !important;
+}
+
+#iconSun:hover{
+    color:black;
+}
+#logo{
+margin-right: 10rem  !important;
+font-weight: 900;
+}
+
