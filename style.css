@@ -32,7 +32,6 @@ body{
     margin: 0;
     padding: 0;
     font-family:'Inconsolata',sans-serif;
-    text-align: center;
 }
 
 .row>*{
@@ -41,7 +40,7 @@ body{
     width: 0 !important;
 }
 .menu{
-    margin-top: 15px;
+    margin-top: 0.875rem; 
 }
 ol{
     list-style: none;
@@ -50,24 +49,53 @@ ol{
 }
 
 li{
-display: inline;
-margin: 8px;
+display: inline-block;
+/* top | right | bottom | left */
+margin: 0 2.95rem  1.95rem  2.95rem;
 }
 
 li:hover{
     font-weight: 700;
 }
 
-#iconSun{
-    color:gray;
-    margin-left: 8rem !important;
-}
-
-#iconSun:hover{
-    color:black;
-}
 #logo{
-margin-right: 10rem  !important;
+margin-right: 7rem  !important;
 font-weight: 900;
 }
 
+#logo:hover{
+font-weight:500;
+}
+
+#dark-mode-toggle{
+ margin-left: 7rem;
+}
+
+#dark-mode-toggle:hover{
+color: lightslategray;
+}
+
+#fotoheader{
+width: 10.5rem;
+height: 10.5rem;
+border-radius: 10cm;
+border: #a4a2a2 dotted 0.5px;
+margin: 15px 0 0 0;
+}
+
+#content{
+margin-left: 29.5rem;
+margin-right: 28rem;
+}
+
+#headSection h3:hover{
+ color: #a4a2a2;
+}
+
+#headSection h6:hover{
+    color: #121212 !important;
+}
+
+#bioContent b{
+    margin-top: 55px !important;
+}
