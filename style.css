@@ -1,30 +1,14 @@
-:root{
---background-color-light: #ffffff;
---text-color-light:#333333;
---background-color-dark:#121212;
---text-color-dark:#ffffff;
+:root[data-applied-mode="light"]{
+ color-scheme: light;
+ --text:black;
+ --background: white;
 }
 
-@media(prefers-color-sheme:dark)
-{
-    body{
-        background-color: var(--background-color-dark);
-        color: var(--text-color-dark);
-    }
-}
-
-@media(prefers-color-sheme:light)
-{
-    body{
-        background-color: var(--background-color-light);
-        color: var(--text-color-light);
-    }
-}
-
-.dark-mode{
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
-}
+:root[data-applied-mode="dark"]{
+    color-scheme: dark;
+    --text:white;
+    --background: black;
+   }
 
 body{
     color: var(--text);
