@@ -1,6 +1,10 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0;    
+}
 :root{
---background-color-light: #ffffff;
---text-color-light:#333333;
+--background-color-light: rgb(44,221,223);
+--text-color-light:#7c77778b;
 --background-color-dark:#121212;
 --text-color-dark:#ffffff;
 }
@@ -11,15 +15,36 @@
         background-color: var(--background-color-dark);
         color: var(--text-color-dark);
     }
+    nav .navbar .navbar-expand-lg .bg-body-tertiary{
+        background-color: #121212 !important;
+        color: #ffffff !important;
+    }
+    .fa-solid .fas {
+        color: #ffffff !important;
+    }
 }
 
 @media(prefers-color-sheme:light)
 {
     body{
-        background-color: var(--background-color-light);
+        background: var(--background-color-light);
         color: var(--text-color-light);
     }
+    nav .navbar .navbar-expand-lg .bg-body-tertiary{
+        background-color:#ffffff !important;
+        color: #333333 !important;
+    }
+    .fa-solid .fas {
+        color: #333333 !important;
+    }
 }
+
+/* Master Media Queries And Responsive CSS Web Design */
+@media (max-width:500px){
+    #logo{
+        color : red;
+        }
+    }
 
 .dark-mode{
     background-color: var(--background-color-dark);
@@ -27,11 +52,12 @@
 }
 
 body{
-    color: var(--text);
-    background: var(--background);
+    color: rgb(178, 180, 182);
+    background: rgb(174,238,228);
+    background: radial-gradient(circle, rgba(174,238,228,1) 0%, rgba(148,167,233,1) 100%);
     margin: 0;
     padding: 0;
-    font-family:'Inconsolata',sans-serif;
+    font-family:'Roboto Flex', sans-serif;
 }
 
 .row>*{
@@ -40,31 +66,36 @@ body{
     width: 0 !important;
 }
 .menu{
-    margin-top: 0.875rem; 
+    margin-top: 0.875rem;
+    color: #727272;
+    margin: 1.438em 28.813em;
 }
 ol{
     list-style: none;
-    font-weight: 400;
+    font-weight: 700;
     width: 100%;
 }
 
 li{
 display: inline-block;
 /* top | right | bottom | left */
-margin: 0 2.95rem  1.95rem  2.95rem;
+margin: -0.05rem  1.95rem ;
 }
 
 li:hover{
-    font-weight: 700;
+    font-weight: 900 !important;
 }
 
 #logo{
-margin-right: 7rem  !important;
-font-weight: 900;
-}
-
-#logo:hover{
-font-weight:500;
+    margin: 0 137px 0 0;
+    padding: 5px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #3e3e3e;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.544);
+    width: 35px;
+    height: 35px;
+    text-align: center;
 }
 
 #dark-mode-toggle{
@@ -72,7 +103,7 @@ font-weight:500;
 }
 
 #dark-mode-toggle:hover{
-color: lightslategray;
+color: rgb(255, 255, 255);
 }
 
 #fotoheader{
@@ -86,17 +117,17 @@ margin: 15px 0 0 0;
 #content{
 margin-left: 29.5rem;
 margin-right: 28rem;
+overflow:auto;
 }
 
-#headSection h3:hover{
- color: #a4a2a2;
+#fotoright{
+    float: left;
 }
 
-#headSection h6:hover{
-    color: #121212 !important;
+#headSection{
+    float: right;
 }
 
 #bioContent b{
     margin-top: 55px !important;
 }
-/* just for git */
