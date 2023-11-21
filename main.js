@@ -76,3 +76,9 @@ const themeToggler = document.getElementById("theme-toggle");
 // 				monicon.style.color="black";
 // 			}
 // 		}
+// darkModeToggle.addEventListener('click',()=>{
+// body.classList.toggle('dark-mode');
+// const isDarkModeEnabled = body.classList.contains('dark-mode');
+// localStorage.setItem('dark-mode',isDarkModeEnabled ? 'enabled' : 'disabled');
+// });
+/* just for git */
