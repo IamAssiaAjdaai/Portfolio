@@ -207,7 +207,10 @@ section {
     gap: 1rem;
   }
   #profilimg{
+    width: 350px;
+    height: 359px;
     border-radius: 50%;
+    object-fit: cover;
   }
   
   /* ICONS */
@@ -435,7 +438,7 @@ footer p{
   text-align: center;
 }
 footer .nav-links{
-  margin-left: 26rem
+  margin-left: 23vw;
 }
 .uparrow{
   margin-right: -2rem;}
