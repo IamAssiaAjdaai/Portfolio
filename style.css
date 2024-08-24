@@ -206,6 +206,9 @@ section {
     margin-top: 1rem;
     gap: 1rem;
   }
+  #profilimg{
+    border-radius: 50%;
+  }
   
   /* ICONS */
   
