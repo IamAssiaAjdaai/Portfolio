@@ -173,7 +173,7 @@ section {
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    margin-right: 240px;
   }
   
   .section__text {
@@ -188,6 +188,7 @@ section {
   .section__text__p1 {
     text-align: center;
     font-size: 1.75rem;
+    width: 400px;
   }
   
   .section__text__p2 {
@@ -441,4 +442,61 @@ footer .nav-links{
   margin-left: 23vw;
 }
 .uparrow{
-  margin-right: -2rem;}
+  margin-right: -2rem;
+}
+
+.animated-text{
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.animated-text span{
+  position: relative;
+}
+.animated-text span::before{
+  content: "";
+  animation: words 15s infinite;
+}
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-left: 2px solid rgb(85, 85, 85);
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+    border-left: 2px solid rgb(255, 255, 255);
+  }
+}
+@keyframes words {
+  0%,20%{
+    content: "Assia Ajdaai";
+  }
+  21%,40%{
+    content: "Software Developer";
+  }  
+  41%,60%{
+    content: ".Net Developer";
+  }
+  61%,80%{
+    content: "Frontend Developer";
+  }
+  81%,100%{
+    content: "Gamer";
+  }
+}
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+  }
+}
