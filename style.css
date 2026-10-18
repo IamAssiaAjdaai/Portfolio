@@ -137,6 +137,8 @@ h1, h2, h3, .wordmark { font-weight: 750; }
 .project-symbol.teal { color: #b5e4ff; background: linear-gradient(130deg,#17485a,#263759); }
 .project-symbol.violet { color: #dccaff; background: linear-gradient(130deg,#3d3263,#202d49); font-size: 42px; }
 .project-symbol.orange { color: #ffe1c4; background: linear-gradient(130deg,#5e3b39,#262d49); }
+.project-screenshot { display: grid; place-items: center; margin: 0; width: 100%; height: 128px; overflow: hidden; border: 1px solid #394b62; border-radius: 14px; background: #172236; }
+.project-screenshot img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .project-card h3 { font-size: clamp(24px, 2.5vw, 30px); margin: 24px 0 10px; }
 .project-card p { color: #bdcbdb; line-height: 1.8; margin: 0 0 23px; }
 .project-stack { margin-top: auto; margin-bottom: 23px; }
