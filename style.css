@@ -201,6 +201,7 @@ h1, h2, h3, .wordmark { font-weight: 750; }
   .section-heading { margin-bottom: 30px; }
   .about-grid, .project-grid { grid-template-columns: 1fr; gap: 18px; }
   .project-symbol { height: 110px; }
+  .project-media-grid { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 9px; padding: 24px 0; }
   .contact-panel { width: min(var(--width), calc(100% - 36px)); padding: 26px; }
   .contact-actions { flex-wrap: wrap; }
