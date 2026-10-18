@@ -1,414 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assia Ajdaai</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaquires.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b1220" />
+    <meta
+      name="description"
+      content="Assia Ajdaai — IHK-certified software developer in Germany. Explore full-stack, backend and mobile projects built with React, TypeScript, C#/.NET, Python and PostgreSQL."
+    />
+    <title>Assia Ajdaai | Software Developer — Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Assia Ajdaai</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="#top" aria-label="Assia Ajdaai — back to top">
+          <span class="wordmark-mark" aria-hidden="true">A<span>.</span></span>
+          <span>Assia Ajdaai</span>
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-contact" href="mailto:assia.ajdaai@gmail.com?subject=Software%20Development%20Opportunity">
+          Let's talk <span aria-hidden="true">↗</span>
+        </a>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Assia Ajdaai</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open to software development opportunities · NRW / Remote</p>
+          <p class="hero-hello">Hi, I'm Assia 👋</p>
+          <h1 id="hero-title">I build software that makes <em>ideas useful.</em></h1>
+          <p class="lead">
+            IHK-certified Application Developer working across
+            <strong>full-stack web, backend systems, mobile apps</strong> and AI integrations.
+            I turn product ideas into practical features, APIs and reliable user experiences.
+          </p>
+          <div class="button-group">
+            <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="mailto:assia.ajdaai@gmail.com?subject=CV%20request%20-%20Assia%20Ajdaai">Request my CV <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-links">
+            <a href="https://github.com/IamAssiaAjdaai" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/assia-ajdaai-7b1901324/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <span>Based in North Rhine-Westphalia, Germany</span>
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img id="profilimg" src="./assets/IMG_3034.jpg" alt="Assia Ajdaai profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1 animated-text">Hello<br>I'm <span></span></p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/AssiaAjdaai.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/assia-ajdaai-7b1901324/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/IamAssiaAjdaai'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img 
-            src="./assets/IMG_3034.jpg" 
-            alt="Profil picture" 
-            class="about-pic"
+        <div class="hero-visual">
+          <div class="portrait-border">
+            <img
+              src="./assets/IMG_3034.jpg"
+              alt="Portrait of Assia Ajdaai"
+              class="portrait"
+              width="480"
+              height="560"
+              fetchpriority="high"
             />
-        </div>
-        <div class="about-details-container">
-	<div class="about-containers">
-            <div class="details-container">
-              <img 
-                src="./assets/experience.png" 
-                alt="Experience icon" 
-                class="icon"
-                />
-                <h3>Experience</h3>
-                <p>+2 years <br />.NET Development</p>
-            </div>
-            <div class="details-container">
-              <img 
-                src="./assets/education.png" 
-                alt="Education icon" 
-                class="icon"
-                />
-                <h3>Education</h3>
-                <p>Apprenticeship IT<br />specialist application development degree</p>
-            </div>
-          </div
-        </div>
-          <div class="text-container">
-            <p>
-              I am a passionate Software Engineer specializing in .NET, with over two years of experience training as an IT Specialist in Application Development at TT-Line GmbH. My journey in the tech industry has equipped me with a strong background in web development, database management, and application development.
-
-              At TT-Line GmbH, I have been involved in developing and maintaining various applications, gaining hands-on experience with modern technologies and best practices in software engineering. My work has allowed me to refine my skills in C#, ASP.NET, SQL, and web technologies like HTML, CSS, and JavaScript.
-
-              Before joining TT-Line GmbH, I completed internships at Maroc Host and Fondation Chikh Zaid, where I focused on database management and further solidified my technical expertise. These experiences have given me a well-rounded skill set that I am eager to expand as I work toward my goal of becoming a Full-Stack Developer.
-
-              I am a problem-solver at heart, with a keen eye for detail and a commitment to continuous learning. I thrive in collaborative environments and am always eager to tackle new challenges.
-
-              Feel free to explore my portfolio and reach out if you'd like to discuss potential opportunities!
-            </p>
+          </div>
+          <div class="floating-tag" aria-label="Qualified in application development">
+            <span class="tag-symbol" aria-hidden="true">✓</span>
+            <span><strong>IHK-certified</strong><small>Application Developer</small></span>
           </div>
         </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow"
-            onclick="location.href='./#experience'"
-            />
-      </div> 
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+      </section>
+
+      <section class="section section-alt" id="about" aria-labelledby="about-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="section-number">01 / About</span>
+            <h2 id="about-title">Engineering with curiosity and care.</h2>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Asp.net</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>WPF</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Maui</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+          <div class="about-grid">
+            <div>
+              <p class="body-large">
+                My foundation is in <strong>C#/.NET and SQL</strong>, and my recent work spans
+                <strong>React, TypeScript, Next.js, REST APIs</strong> and databases.
+                I completed my IHK vocational qualification in Application Development in 2025
+                and have professional experience developing web applications and integrations.
+              </p>
+              <p>
+                I enjoy understanding problems, building across the stack and improving
+                features through debugging and testing. Alongside software engineering,
+                I'm developing my UI and visual communication skills through digital media design.
+              </p>
+            </div>
+            <div class="skills">
+              <div class="skill-group">
+                <h3>Languages &amp; web</h3>
+                <div class="chips"><span>TypeScript</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>HTML / CSS</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Backend &amp; data</h3>
+                <div class="chips"><span>C# / .NET</span><span>Python</span><span>Node.js</span><span>REST APIs</span><span>PostgreSQL</span><span>SQL</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Mobile &amp; workflow</h3>
+                <div class="chips"><span>React Native</span><span>Expo</span><span>Docker</span><span>Git</span><span>Vitest</span><span>Playwright</span></div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="section-number">02 / Selected work</span>
+            <h2 id="projects-title">Projects I'm building.</h2>
+            <p>Real work and ongoing projects — with clear links wherever the source is public.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card featured">
+              <div class="project-top">
+                <span class="project-kicker">01 · E-commerce SaaS</span>
+                <span class="project-state">Public repository · In development</span>
+              </div>
+              <div class="project-symbol" aria-hidden="true">AC<span>↗</span></div>
+              <h3>AfricaCOD</h3>
+              <p>
+                A multi-market cash-on-delivery commerce workspace. Building
+                organization and store onboarding, country-specific markets,
+                product offers, order workflows and integrations.
+              </p>
+              <div class="project-stack"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Better Auth</span><span>Playwright</span></div>
+              <a class="text-link" href="https://github.com/IamAssiaAjdaai/africaCod" target="_blank" rel="noopener noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-kicker">02 · AI &amp; mobile</span>
+                <span class="project-state">Private repository · In development</span>
+              </div>
+              <div class="project-symbol teal" aria-hidden="true">CW<span>✦</span></div>
+              <h3>CITYWALK</h3>
+              <p>
+                An AI-powered city guide for web and mobile, with personalized walking
+                routes, multilingual content, saved places and shareable itineraries.
+              </p>
+              <div class="project-stack"><span>React Native</span><span>Expo</span><span>Next.js</span><span>PostgreSQL</span></div>
+              <span class="project-note">Private project — description available here.</span>
+            </article>
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-kicker">03 · AI automation</span>
+                <span class="project-state">Public repository</span>
+              </div>
+              <div class="project-symbol orange" aria-hidden="true">AI<span>↗</span></div>
+              <h3>WhatsApp AI Chatbot</h3>
+              <p>
+                An e-commerce chatbot project exploring multilingual conversations,
+                voice transcription and structured customer order flows.
+              </p>
+              <div class="project-stack"><span>Node.js</span><span>TypeScript</span><span>Express</span><span>AI APIs</span></div>
+              <a class="text-link" href="https://github.com/IamAssiaAjdaai/Whatsapp-ai-chatbot-for-e-commerce" target="_blank" rel="noopener noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-kicker">04 · .NET / inventory</span>
+                <span class="project-state">Public repository</span>
+              </div>
+              <div class="project-symbol violet" aria-hidden="true">.NET<span>↗</span></div>
+              <h3>Inventory-ProDesk</h3>
+              <p>
+                An inventory and warehouse management project with stock and
+                store-management workflows built using C# and .NET.
+              </p>
+              <div class="project-stack"><span>C#</span><span>.NET</span><span>Inventory</span></div>
+              <a class="text-link" href="https://github.com/IamAssiaAjdaai/Inventory-ProDesk" target="_blank" rel="noopener noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="section-number">03 / Background</span>
+            <h2 id="experience-title">Experience &amp; education.</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2026</span>
+              <div><h3>Junior Software Developer</h3><p class="timeline-org">Mission Mittelstand</p><p>Professional software development experience with web applications, troubleshooting and integrations.</p></div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2025</span>
+              <div><h3>Fachinformatikerin für Anwendungsentwicklung</h3><p class="timeline-org">IHK qualification · Vocational training completed</p><p>Application development with C#/.NET, SQL, software debugging and database-oriented workflows.</p></div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Additional experience</span>
+              <div><h3>Web development &amp; visual design</h3><p class="timeline-org">Agency experience and ongoing training</p><p>React and WordPress experience, alongside expanding skills in UI, layout and digital media design.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-panel">
+          <div>
+            <span class="section-number">04 / Contact</span>
+            <h2 id="contact-title">Have a role or a project in mind?</h2>
+            <p>I'm interested in software development opportunities in Düsseldorf / NRW and remote-friendly teams. Let's connect.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:assia.ajdaai@gmail.com?subject=Software%20Development%20Opportunity">Email me <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="https://www.linkedin.com/in/assia-ajdaai-7b1901324/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Assia Ajdaai</span>
+        <span>Built with curiosity, code and attention to detail.</span>
+        <a href="#top">Back to top ↑</a>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ProDeskLogin.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ProDeskLogin</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/IamAssiaAjdaai/Inventory-ProDesk'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ComingSoon.webp"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Cooming soon</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ComingSoon.webp"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Coming soon</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png" 
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:assia.ajdaai@gmail.com">Assia.Ajdaai@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png" 
-            alt="Linkedin icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/assia-ajdaai-7b1901324/">Assia Ajdaai</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-        <!-- <img 
-        src="./assets/up-arrow.png" 
-        alt="Arrow icon" 
-        class="icon uparrow arrow"
-        onclick="location.href='./#profile'"
-        /> -->
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Assia Ajdaai All Rights Reserved</p>
     </footer>
-	<script src="main.js"></script>
-</body>
+  </body>
 </html>
