@@ -137,10 +137,10 @@ h1, h2, h3, .wordmark { font-weight: 750; }
 .project-symbol.teal { color: #b5e4ff; background: linear-gradient(130deg,#17485a,#263759); }
 .project-symbol.violet { color: #dccaff; background: linear-gradient(130deg,#3d3263,#202d49); font-size: 42px; }
 .project-symbol.orange { color: #ffe1c4; background: linear-gradient(130deg,#5e3b39,#262d49); }
-.project-media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 12px; margin: 0; }
-.project-shot-link { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 8px; justify-items: center; width: 100%; min-height: 215px; padding: 11px; background: #19293e; border: 1px solid #40536d; border-radius: 14px; }
+.project-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; }
+.project-shot-link { display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 100%; padding: 8px; background: #19293e; border: 1px solid #40536d; border-radius: 14px; overflow: hidden; }
 .project-shot-link:hover { border-color: #85d9c9; background: #1e344c; }
-.project-shot-link img { display: block; width: 100%; height: 178px; object-fit: contain; }
+.project-shot-link img { display: block; width: 100%; aspect-ratio: 1.75; height: auto; object-fit: cover; object-position: center; border-radius: 8px; }
 .project-shot-link .shot-caption { color: #c5d8e9; font-size: 12px; font-weight: 700; text-align: center; }
 .project-card h3 { font-size: clamp(24px, 2.5vw, 30px); margin: 24px 0 10px; }
 .project-card p { color: #bdcbdb; line-height: 1.8; margin: 0 0 23px; }
