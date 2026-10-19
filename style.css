@@ -143,6 +143,11 @@ h1, h2, h3, .wordmark { font-weight: 750; }
 .project-shot-link:focus-visible { outline-offset: 2px; }
 .project-shot-link img { display: block; width: 100%; height: auto; border-radius: 8px; }
 .project-shot-link .shot-caption { color: #c5d8e9; font-size: 12px; font-weight: 700; text-align: center; }
+/* Keep actual mobile screenshots fully visible inside the dark project card. */
+.project-media-grid.citywalk-media .project-shot-link { background: #f1f6fd; border-color: #425b77; }
+.project-media-grid.citywalk-media .project-shot-link:hover { background: #fff; border-color: var(--accent); }
+.project-media-grid.citywalk-media .project-shot-link img { height: clamp(210px, 23vw, 300px); object-fit: contain; object-position: center top; background: #f8fbff; }
+.project-media-grid.citywalk-media .shot-caption { color: #17324d; }
 .project-card h3 { font-size: clamp(24px, 2.5vw, 30px); margin: 24px 0 10px; }
 .project-card p { color: #bdcbdb; line-height: 1.8; margin: 0 0 23px; }
 .project-stack { margin-top: auto; margin-bottom: 23px; }
@@ -215,6 +220,7 @@ h1, h2, h3, .wordmark { font-weight: 750; }
     scrollbar-width: thin;
   }
   .project-shot-link { scroll-snap-align: start; }
+  .project-media-grid.citywalk-media .project-shot-link img { height: clamp(295px, 80vw, 370px); }
   .timeline-item { grid-template-columns: 1fr; gap: 9px; padding: 24px 0; }
   .contact-panel { width: min(var(--width), calc(100% - 36px)); padding: 26px; }
   .contact-actions { flex-wrap: wrap; }
